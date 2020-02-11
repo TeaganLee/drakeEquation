@@ -26,8 +26,12 @@ int numberOfExoplanets;
 double f_l;
 double f_i;
 double f_c;
-int l;
+int L;
 
+N = rStar * f_p * numberOfExoplanets * f_l * f_i * f_c * L
+
+System.out.println("The number of intelligent species that are out there, \n"
+        + "that can communicate with us is: " + N );
 
     }
 
