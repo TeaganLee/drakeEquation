@@ -1,11 +1,42 @@
 package com.LickingHeights;
 
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
 
+        Scanner keyboard;
+        keyboard = new Scanner (System.in);
+
+        String rStar;
+        String f_p;
+        String numberOfExoplanets;
+        String f_l;
+        String f_i;
+        String f_c;
+        String L;
+
+        // Code
+
+        System.out.println("rate of star formation");
+        rStar = keyboard.nextLine();
+
+        System.out.println ("Fraction of said stars with planets");
+        f_p = keyboard.nextLine();
+
+        System.out.println("# of planets capable of supporting life");
+        numberOfExoplanets = keyboard.nextLine();
+
+        System.out.println ("Fraction of Exoplanets capable of supporting life");
+        f_l = keyboard.nextLine();
+
+        System.out.println ("fraction of that life that develops intellegence");
+        f_i = keyboard.nextLine();
+
+        System.out.println("Develops communication");
+        f_c = keyboard.nextLine();
+
+        System.out.println("Longevity of communication");
+        L = keyboard.nextLine();
 
     }
 
@@ -30,34 +61,9 @@ double f_i;
 double f_c;
 int L;
 
-// prompts
+N = rStar * f_p * numberOfExoplanets * f_l * f_i * f_c * L;
 
-        System.out.println("rate of star formation");
-        rStar = Math.pow(keyboard.nextInt(), -1);
-
-        System.out.println ("Fraction of said stars with planets");
-        f_p = keyboard.nextDouble();
-
-        System.out.println("# of planets capable of supporting life");
-        numberOfExoplanets = keyboard.nextInt();
-
-        System.out.println ("Fraction of Exoplanets capable of supporting life");
-        f_l = keyboard.nextDouble();
-
-        System.out.println ("fraction of that life that develops intellegence");
-        f_i = keyboard.nextDouble();
-
-        System.out.println("Develops communication");
-        f_c = keyboard.nextDouble();
-
-        System.out.println("Longevity of communication");
-        L = keyboard.nextInt();
-
-        //equation
-
-        N = rStar * f_p * numberOfExoplanets * f_l * f_i * f_c * L
-
-        System.out.println("The number of intelligent species that are out there, \n"
+System.out.println("The number of intelligent species that are out there, \n"
         + "that can communicate with us is: " + N );
 
     }
